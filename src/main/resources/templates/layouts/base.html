@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Gestión de Proyectos</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+
+    <header>
+        <h1>Gestión de Proyectos</h1>
+        <nav>
+            <a th:href="@{/proyectos}">Proyectos</a>
+            <a th:href="@{/logout}">Cerrar Sesión</a>
+        </nav>
+    </header>
+
+    <main>
+        <div th:insert="~{::content}"></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Gestión de Proyectos</p>
+    </footer>
+
+</body>
+</html>
